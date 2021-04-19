@@ -91,7 +91,7 @@ h2 span {
     transition: 0.2s ease all;
 }
 i#computer:hover {
-    color: lightseagreen;
+    color: rgb(0, 173, 216);
 }
 #banner .container div {
     display: flex;
@@ -229,7 +229,7 @@ footer h4 {
 }
 
 footer i {
-    margin-right: 12px;
+    margin-right: 20px;
     cursor: pointer;
     transition: 0.2s
 }
@@ -239,7 +239,13 @@ footer i:hover {
 
 footer a {
     text-decoration: none;
+    transition: 0.2s ease all;
 }
+
+footer a:hover {
+    color: rgb(0, 173, 216);
+}
+
 .contact-box>div:first-child {
     display: block;
     justify-content: center;
@@ -304,7 +310,7 @@ button#submit {
 
 @keyframes blink {
     0% {
-        color: white;
+    color: rgb(0, 173, 216);
         opacity: 1;
     }
     50% {
