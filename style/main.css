@@ -11,6 +11,14 @@ body {
     background-color: white;
 }
 
+#colapse-menu {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -42,6 +50,7 @@ nav ul li a:hover {
     background-color: lightblue;
     color: #333;
 }
+
 
 /* =================== MAIN ==================== */
 
@@ -224,8 +233,7 @@ footer h3 {
 }
 
 footer h4 {
-    margin: 40px 0;
-    text-align: center;
+    text-align: left;
 }
 
 footer i {
@@ -255,7 +263,7 @@ footer a:hover {
 
 .contact-box>div>div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 form {
@@ -318,5 +326,228 @@ button#submit {
     }
     100% {
         opacity: 1;
+    }
+}
+
+
+/* =============== MEDIA QUERIES ================ */
+
+@media screen and (min-width: 1441px) {
+    header {
+        padding: 0 120px;
+    }
+    .container {
+        width: 1200px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .container {
+        width: 86%;
+    }
+    .contact-box {
+        padding: 0 20px;
+    }
+    #banner {
+        background-position: top;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    header {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+    }
+    h1 {
+        position: absolute;
+        top: 14px;
+        left: 8px;
+    }
+    h2 {
+        width: 80%;
+        margin: auto;
+    }
+    #desktop-menu {
+        display: none;
+    }
+    #hidden {
+        width: 100%;
+        background-color: #555;
+        transition: 0.4s ease all;
+    }
+    #hidden ul {
+        width: 100%;
+        display: block;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    #hidden ul li {
+        margin: 8px 0;
+        padding: 11px 16px;
+    }
+    #colapse-menu {
+        position: relative;
+        display: block;
+        border: 1px solid white;
+        padding: 6px;
+        border-radius: 4px;
+        margin: 12px 0;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        padding: 11px 16px;
+        box-sizing: border-box;
+        transition: 0.2s ease all;
+    }
+    nav ul li a:hover {
+        color: white;
+        background-color: #555;
+    }
+    .container {
+        width: 100%;
+    }
+    #banner .container {
+        position: relative;
+        top: -18%;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .contact-box>div:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #about .container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about img {
+        margin: 0;
+    }
+    form {
+        width: 80%;
+    }
+    #banner .container div {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 319px) and (max-width: 424px) {
+    header {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+    }
+    h1 {
+        position: absolute;
+        top: 14px;
+        left: 8px;
+    }
+    h2 {
+        width: 80%;
+        margin: auto;
+        font-size: 2em;
+    }
+    .container p {
+        font-size: 1em;
+    }
+    h4 {
+        font-size: 2em;
+    }
+    #desktop-menu {
+        display: none;
+    }
+    #hidden {
+        width: 100%;
+        background-color: #555;
+        transition: 0.4s ease all;
+    }
+    #hidden ul {
+        width: 100%;
+        display: block;
+        justify-content: flex-end;
+        text-align: right;
+    }
+    #hidden ul li {
+        margin: 8px 0;
+        padding: 11px 16px;
+    }
+    #colapse-menu {
+        position: relative;
+        display: block;
+        border: 1px solid white;
+        padding: 6px;
+        margin: 12px 0;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        padding: 11px 16px;
+        box-sizing: border-box;
+        transition: 0.2s ease all;
+    }
+    nav ul li a:hover {
+        color: white;
+        background-color: #555;
+    }
+    .container {
+        width: 100%;
+    }
+    #banner .container {
+        position: relative;
+        top: -18%;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .contact-box>div:first-child {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #about .container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #about img {
+        margin: 0;
+    }
+    form {
+        width: 100%;
+    }
+    #banner div p {
+        font-size: 1em;
+    }
+    #banner .container div {
+        display: none;
+    }
+    #contact-info div {
+        font-size: 0.8em;
     }
 }

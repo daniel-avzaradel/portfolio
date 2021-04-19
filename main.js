@@ -33,3 +33,31 @@ function blink() {
     arrowR[2].classList.remove('arrow')
     
 }
+
+const navBar = document.querySelector('#colapse-menu');
+const mobileMenu = document.getElementById('hidden');
+const li = document.querySelectorAll('#hidden ul li')
+
+console.log(li)
+console.log(mobileMenu)
+
+navBar.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+})
+
+
+li[0].addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+})
+li[1].addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+})
+li[2].addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+})
+li[3].addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+})
+li[4].addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden')
+})
