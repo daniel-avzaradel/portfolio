@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-size: 18px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a {
+    text-decoration: none;
+    padding: 11px 16px;
+    box-sizing: border-box;
+    transition: 0.2s ease all;
+}
+nav ul li a:hover {
+    background-color: lightblue;
+    color: #333;
+}
+
+/* =================== MAIN ==================== */
+
+#banner {
+    width: inherit;
+    height: 900px;
+    background-image: url(../background.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.container {
+    width: 60%;
+    display: block;
+    margin: auto;
+    align-items: center;
+}
+
+#banner div p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #437378;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 600;
+    transition: 0.2s;
+    text-align: center;
+    color: #444;
+}
+h2 span {
+    color: salmon;
+}
+
+#banner .container i {
+    color: #333;
+    margin: 20px;
+}
+
+#computer {
+    cursor: pointer;
+    animation-name: computer;
+    animation-duration: 2s;
+    transition: 0.2s ease all;
+}
+i#computer:hover {
+    color: lightseagreen;
+}
+#banner .container div {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    animation: blink .5s alternate ease;
+    animation-iteration-count: 2;
+    margin: 0;
+}
+
+
+/* =============== ABOUT, PORTFOLIO, BLOG ================ */
+
+
+#portfolio, #blog, #about {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+#about {
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about .container div {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+.about-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.about-box>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#about img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+#about p {
+    color: #333;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h4 {
+    color: rgb(0, 173, 216);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.portfolio-box, .blog-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.work {
+    width: 350px;
+    height: 260px;
+    background-color: rgb(255, 213, 209);
+    margin: 10px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.work figure {
+    width: 100%;
+    height: 80%;
+}
+
+.work figcaption {
+    width: 100%;
+    height: 20%;
+    background-color: #444;
+}
+
+.work:hover {
+    background-color: salmon;
+}
+
+/* =============== CONTACT ================ */
+
+footer {
+    width: 100%;
+    background-color: #333;
+    height: auto;
+    padding: 60px 0;
+}
+
+footer h3 {
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+footer h4 {
+    margin: 40px 0;
+    text-align: center;
+}
+
+footer i {
+    margin-right: 12px;
+    cursor: pointer;
+    transition: 0.2s
+}
+footer i:hover {
+    color: rgb(0, 173, 216);
+}
+
+footer a {
+    text-decoration: none;
+}
+.contact-box>div:first-child {
+    display: block;
+    justify-content: center;
+    padding: 40px 0;
+    width: 40%;
+}
+
+.contact-box>div>div {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+}
+
+footer form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+footer form input:focus {
+    background-color: floralwhite;
+}
+
+textarea {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button#submit {
+    width: 220px;
+    margin: auto;
+    background-color: rgb(0, 102, 128);
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#submit:hover {
+    background-color: rgb(0, 173, 216);
+}
+
+#contact-info {
+    display: block;
+}
+#contact-info div {
+    margin: 20px 0;
+}
+
+
+/* =============== ANIMATIONS ================ */
+
+@keyframes blink {
+    0% {
+        color: white;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
