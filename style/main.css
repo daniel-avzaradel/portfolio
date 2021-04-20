@@ -198,13 +198,18 @@ h4 {
 
 .work figure {
     width: 100%;
-    height: 80%;
+    height: 84%;
 }
 
 .work figcaption {
     width: 100%;
-    height: 20%;
+    height: 16%;
     background-color: #444;
+    padding: 10px;
+}
+
+.work figcaption span {
+    float: right;
 }
 
 .work:hover {
@@ -352,6 +357,12 @@ button#submit {
         background-position: top;
         background-size: cover;
     }
+    #contact-info div {
+        font-size: 0.8em;
+    }
+    h4 {
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
@@ -444,6 +455,12 @@ button#submit {
     }
     #banner .container div {
         display: none;
+    }
+    #contact-info div {
+        font-size: 0.8em;
+    }
+    h4 {
+        font-size: 2em;
     }
 }
 
