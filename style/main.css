@@ -382,6 +382,7 @@ button#submit {
     h2 {
         width: 80%;
         margin: auto;
+        font-size: 2em;
     }
     #desktop-menu {
         display: none;
@@ -464,7 +465,7 @@ button#submit {
     }
 }
 
-@media screen and (min-width: 319px) and (max-width: 424px) {
+@media screen and (min-width: 315px) and (max-width: 424px) {
     header {
         z-index: 5;
         display: flex;
