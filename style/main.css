@@ -184,6 +184,7 @@ h4 {
     justify-content: center;
     align-items: center;
     margin: auto;
+    text-decoration: none;
 }
 
 .work {
@@ -204,6 +205,10 @@ h4 {
     transition: 0.2s ease all;
     box-sizing: border-box;
     overflow: hidden;
+    text-decoration: none;
+}
+.work a {
+    text-decoration: none;
 }
 
 .work figcaption {
@@ -212,10 +217,12 @@ h4 {
     background-color: #444;
     padding: 10px;
     z-index: 1;
+    text-decoration: none;
 }
 
 .work figcaption span {
     float: right;
+    text-decoration: none;
 }
 
 .work figure:hover {
@@ -306,6 +313,7 @@ textarea {
     outline: none;
     padding: 10px;
     box-sizing: border-box;
+    resize: none;
 }
 
 button#submit {
