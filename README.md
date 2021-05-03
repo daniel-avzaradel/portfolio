@@ -2,9 +2,9 @@
 
 <img src="./img/fullpage.png">
 
+<br/>
 
-
-### Portfolio Mobile View:
+### 📱 Portfolio Mobile View:
 
 <img src="./img/home-mobile.png">
 
